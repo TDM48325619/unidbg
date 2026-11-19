@@ -3083,7 +3083,7 @@ public class DalvikVM64 extends BaseVM implements VM {
                 if (log.isDebugEnabled()) {
                     log.debug("GetLongArrayElements array={}, isCopy={}", array, isCopy);
                 }
-                return Objects.requireNonNull(array)._GetArrayCritical(emulator, isCopy).toIntPeer();
+                return Objects.requireNonNull(array)._GetArrayCritical(emulator, isCopy).peer;
             }
         });
 
